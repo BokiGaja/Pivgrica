@@ -1,0 +1,208 @@
+body {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/background.jpg");
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* PLAYERS DISPLAY*/
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 0 20px;
+    background-color: rgba(255,181,2,0.5);
+    border: solid 2px darkorange;
+    float: left;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.playersName, .players2Name, .players3Name, .players4Name {
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+    border:solid 2px darkorange;
+    padding: 1px 5px;
+    border-radius: 10px;
+}
+
+.progressBar {
+    /*width: 200px;*/
+    margin: 5px auto;
+    background-color: green;
+    border-radius: 5px;
+    border: solid greenyellow 1px;
+    padding: 4px 0;
+    text-align: center;
+    color: wheat;
+    font-size: 20px;
+}
+
+.deadPlayer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 0 20px;
+    background-color: rgba(6, 0, 41, 0.5);
+    border: solid 2px darkorange;
+    float: left;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.playersImage {
+    width: 150px;
+}
+
+.inputName {
+    margin: 5px auto;
+    width: 200px;
+}
+
+.pictureInput {
+    display: block;
+    margin-left: 50px;
+}
+
+.activePlayer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 0 20px;
+    background-color: rgba(10, 174, 255, 0.5);
+    border: solid 2px darkorange;
+    float: left;
+    height: 300px;
+    border-radius: 30px;
+}
+/* NEW PLAYER */
+
+.newPlayer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 0 20px;
+    float: left;
+    height: 300px;
+    background-color: rgba(255, 254, 57, 0.5);
+    border: solid 2px darkorange;
+    border-radius: 30px;
+}
+
+.toNewPlayerImg {
+    height: 100px;
+    width: 100px;
+}
+
+.newPlayerBtn {
+    background-color: transparent;
+    border-color: transparent;
+}
+/* CHOICES*/
+.choices {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.choicePic {
+    height: 250px;
+    float: top;
+    padding: 0 10px;
+}
+
+
+/* LEGEND */
+
+.legend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 0 10px;
+    background-color: rgba(0,190,139,0.5);
+    height: 500px;
+    position: absolute;
+    margin: 200px 10px 100px 82%;
+    border-radius: 20px;
+    border: solid 2px black;
+}
+
+.legendTitle {
+    margin: 15px auto auto auto;
+    font-size: 30px;
+    font-style: italic;
+    padding: 0 20px;
+}
+
+.legendPicture {
+    width: 100px;
+    height: 100px;
+    padding: 0px 10px;
+    float: left;
+}
+
+.legend p {
+    padding-bottom: 5px;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 100%;
+    padding: 30px 0;
+    height: 100px;
+}
+
+.currentPlayer {
+    width: 500px;
+    height: 40px;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 20px;
+    background-color: skyblue;
+    font-size: 30px;
+}
+
+.nextPlayer {
+    display: block;
+    width: 500px;
+    padding-bottom: 35px;
+    border-radius: 15px;
+    background-color: red;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+

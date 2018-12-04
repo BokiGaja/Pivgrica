@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="vue.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <h1><img src="images/logo.png" style="width: 500px" alt="logo"></h1>
+    <div :class="clplayer" id="player1" :style="activatePlayer">
+        <p class="playersName">{{ playersName }}</p>
+        <img :src="personPicture" alt="" class="playersImage">
+        <input type="text" class="inputName" v-model="playersName" @keyup.enter="addPlayer" :style="playersInput">
+        <input type="file" id="personPicture" ref="myFile" @change="uploadImage" class="pictureInput" :style="removeInput">
+        <div class="progressBar" :style="{width: health*2+'px'}">{{ health }}</div>
+    </div>
+    <div :class="clplayer" id="player2" :style="activatePlayer">
+        <p class="players2Name">{{ players2Name }}</p>
+        <img :src="person2Picture" alt="" class="playersImage">
+        <input type="text" class="inputName" v-model="players2Name" @keyup.enter="addPlayer2" :style="players2Input">
+        <input type="file" id="person2Picture" ref="myFile" @change="uploadImage2" class="pictureInput" :style="removeInput">
+        <div class="progressBar" :style="{width: health*2+'px'}">{{ health }}</div>
+    </div>
+    <div :class="clplayer" id="player3" :style="activatePlayer">
+        <p class="players3Name">{{ players3Name }}</p>
+        <img :src="person3Picture" alt="" class="playersImage">
+        <input type="text" class="inputName" v-model="players3Name" @keyup.enter="addPlayer3" :style="players3Input">
+        <input type="file" id="person3Picture" ref="myFile" @change="uploadImage3" class="pictureInput" :style="removeInput">
+        <div class="progressBar" :style="{width: health*2+'px'}">{{ health }}</div>
+    </div>
+    <div :class="clplayer" id="player4" :style="activatePlayer">
+        <p class="players4Name">{{ players4Name }}</p>
+        <img :src="person4Picture" alt="" class="playersImage">
+        <input type="text" class="inputName" v-model="players4Name" @keyup.enter="addPlayer4" :style="players4Input">
+        <input type="file" id="person4Picture" ref="myFile" @change="uploadImage4" class="pictureInput" :style="removeInput">
+        <div class="progressBar" :style="{width: health*2+'px'}">{{ health }}</div>
+    </div>
+
+    <div class="newPlayer" :style="newPlayerButton">
+        <button class="newPlayerBtn" @click="addNewPlayer"><img src="images/plus.png" alt="" class="toNewPlayerImg" ></button>
+    </div>
+    <div class="choices">
+        <img :src="image1" alt="" class="choicePic" @click="choice1">
+        <img :src="image2" alt="" class="choicePic" @click="choice2">
+        <img :src="image3" alt="" class="choicePic" @click="choice3">
+    </div>
+    <div class="legend">
+        <p class="legendTitle">Legenda</p>
+        <img src="images/1.png" alt="" class="legendPicture"><p>Igrac ne pije </p>
+        <img src="images/2.png" alt="" class="legendPicture"><p>Igrac pije jedan gutljaj</p>
+        <img src="images/3.png" alt="" class="legendPicture"><p>Igrac pije 3 gutljaja</p>
+    </div>
+    <div class="buttons">
+        <button class="nextPlayer" id="start-game" @click="begin">{{ startNext }}</button>
+        <button class="nextPlayer" id="next-player" @click="selectNextPlayer">{{ nextPlayer }}</button>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
+
